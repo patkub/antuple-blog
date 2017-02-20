@@ -11,14 +11,14 @@ email: patrick@antuple.net
 description: >
   Personal blog
 logo: "/assets/images/logo.png"
-baseurl: "" # the subpath of your site, e.g. /blog
-url: "http://antuple.net/blog" # the base hostname & protocol for your site
+baseurl: "/blog" # the subpath of your site, e.g. /blog
+url: "http://antuple.net/" # the base hostname & protocol for your site
 paginate:	5 # The number of posts to show per page on your homepage
 
 name: 'Patrick Kubiak'
 bio: >
   Computer Science student.
-author_image: "/assets/images/logo.png"
+author_image: "assets/images/logo.png"
 github_username:  patkub
 
 # Google Analytics
