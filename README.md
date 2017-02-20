@@ -1,20 +1,11 @@
-# Amplify for Jekyll
+# ANtuple Blog
 
-*A Jekyll html theme in the vague style of Medium.com built using Google AMP*
+*A Jekyll blog built using Google AMP*
 
 Google's [Accelerated Mobile Pages Project](https://www.ampproject.org/)
 (a.k.a. "Google AMP" or Google ⚡) is an open-source project that defines rules
 for creating websites that load nearly instantly even on mobile devices with
 slow connections.
-
-Check out a live example of this theme at
-[http://ageitgey.github.io/amplify/](http://ageitgey.github.io/amplify/2016/03/08/example-post.html)
-or
-[via Google's CDN](https://cdn.ampproject.org/c/s/ageitgey.github.io/amplify/2016/03/08/example-post.html).
-
-## Screenshot
-
-![screenshot](/assets/images/screenshot.png)
 
 ## Why use Google AMP?
 
@@ -32,85 +23,7 @@ it's own CDN to make the page load even faster. It's similar to how
 [Facebook Instant Articles](https://instantarticles.fb.com/) works on the
 Facebook platform.
 
-## How fast is this theme?
-
-To get a general idea of how this theme performs, let's compare this page
-hosted on Github vs. another static page hosted on Github. We can use
-https://facebook.github.io/react/ as a comparison page. I've also included
-https://jekyllrb.com/ as another point of comparison (it's also hosted on
-Github).
-
-Of course our page and these other pages have different
-layouts. But the main point is that they are typical static sites hosted
-on Github and are well-designed. So it should give us a rough idea of how
-other typical pages might perform. I'm not suggesting anything
-is wrong with these other pages. They are actually pretty fast!
-
-If you are on a fast connection, all these pages load about the same speed
-but our page renders the main content much faster:
-
-#### First page visit with no throttling
-
-| Page                                                            | DOMContentReady | Load   |
-| -------------                                                   |:-----------:    | ------:|
-| https://facebook.github.io/react/                               | 1.7s            | 1.89s  |
-| https://jekyllrb.com/                                           | 500ms           | 909ms  |
-| https://ageitgey.github.io/amplify/2016/03/08/example-post.html | 61ms!           | 1.06s  |
-
-#### Second page visit with no throttling
-
-| Page                                                            | DOMContentReady | Load   |
-| -------------                                                   |:-----------:    | ------:|
-| https://facebook.github.io/react/                               | 1.08s           | 1.33s  |
-| https://jekyllrb.com/                                           | 212ms           | 486ms  |
-| https://ageitgey.github.io/amplify/2016/03/08/example-post.html | 66ms!           | 1.03s  |
-
-You'll see the main content render much faster because AMP
-[doesn't allow anything in your page](https://www.ampproject.org/docs/get_started/technical_overview.html)
-that would block the page from rendering after the initial HTML loads. This means no external
-css, no custom js, etc.
-
-Here's how this looks to the user (as rendered by [WebPageTest](http://www.webpagetest.org/)):
-
-![screenshot](/assets/images/speed.png)
-
-You can get sometimes get even faster speeds when your
-[page is served via Google's AMP CDN](https://cdn.ampproject.org/c/s/ageitgey.github.io/amplify/2016/03/08/example-post.html).
-But that's not always true depending the randomness of the internet and where
-you are connecting from.
-
-So there's some tiny benefit on a 100mbs wired connection. But optimization is much more
-important on a slow, high-latency mobile connection (i.e. most actual internet users in 2016).
-Let's try loading the page using the "Regular 2G (250kb/s, 300ms RT)" throttling setting in
-Chrome Dev Tools:
-
-#### First page visit with "Regular 2G" throttling
-
-| Page                                                            | DOMContentReady | Load   |
-| -------------                                                   |:-----------:    | ------:|
-| https://facebook.github.io/react/                               | 28.50s          | 29.39s |
-| https://jekyllrb.com/                                           | 1.75s           | 7.03s  |
-| https://ageitgey.github.io/amplify/2016/03/08/example-post.html | 530ms!          | 5.07s  |
-
-#### Second page visit with "Regular 2G" throttling
-
-| Page                                                            | DOMContentReady | Load   |
-| -------------                                                   |:-----------:    | ------:|
-| https://facebook.github.io/react/                               | 2.02s           | 2.55s  |
-| https://jekyllrb.com/                                           | 392ms           | 791ms  |
-| https://ageitgey.github.io/amplify/2016/03/08/example-post.html | 385ms!          | 1.64s  |
-
-Even a horribly slow connection with high latency, the user will still see a page render in
-half a second. That's great! The difference between 385ms and 28s is the difference between
-someone reading your blog is skipping your blog.
-
-But notice that the Jekyll homepage still performs well on the second page load. Google AMP
-gives you a nice set of rules for making fast pages, but of course it isn't required to make
-a fast page.
-
 ## Getting Started
-
-To use this theme, it's just like using any other Jekyll template:
 
 *Step 1:* [Install Jekyll](https://jekyllrb.com/docs/installation/)
 
@@ -120,10 +33,10 @@ If on windows you will need the ruby devkit available here: [rubyinstaller](http
 *Step 2:* Clone this repo to your computer
 
 ```bash
-git clone git@github.com:ageitgey/amplify.git
+git clone git@github.com:patkub/antuple-blog.git
 ```
 
-*Step 3:* Run `gem install bundler; bundle install` inside the new `/amplify/` folder that was
+*Step 3:* Run `gem install bundler; bundle install` inside the new `/antuple-blog/` folder that was
 just created to install the required ruby dependencies.
 
 *Step 4:* Tweak `_config.yml`.
@@ -252,9 +165,7 @@ version generated by default. You might want to tweak it.
 
 ## Credits
 
-This theme is inspired by
-[Mediator by Dirk Fabisch](https://github.com/dirkfabisch/mediator). I used some
-of the css and html from that theme as a starting point. Thanks!
+
 
 ## License
 
