@@ -25,7 +25,8 @@ amp-img {
   @include clearfix;
 }
 
-$rs: 16px;
+$rs: 20px;
+$page-max-width: 1000px;
 
 $font-serif: Georgia,Cambria,"Times New Roman",Times,'Lora', serif;
 $font-sans: "Helvetica Neue", 'Open Sans', Arial, Helvetica, sans-serif;
@@ -62,7 +63,7 @@ body {
 .site-header {
   position: relative;
   width: 100%;
-  max-width: 700px;
+  max-width: $page-max-width;
   margin: 16px auto 0 auto;
   @include box-sizing(border-box);
   @include respond-to(800) {
@@ -92,7 +93,7 @@ body {
 
 .blog-header {
   width: 100%;
-  max-width: 700px;
+  max-width: $page-max-width;
   margin: 0 auto;
   position: relative;
   padding: 0;
@@ -120,7 +121,7 @@ body {
 
 .content {
   width: 100%;
-  max-width: 700px;
+  max-width: $page-max-width;
   margin: 25px auto 0 auto;
   @include box-sizing(border-box);
   @include respond-to(800) {
@@ -173,7 +174,7 @@ body {
 }
 
 .post-template .content {
-  max-width: 700px;
+  max-width: $page-max-width;
 }
 
 .index-headline {
@@ -205,7 +206,7 @@ body {
   margin: 0 auto;
   padding: $rs * 3 0;
   width: 100%;
-  max-width: 700px;
+  max-width: $page-max-width;
   font-size: $rs / 4 * 3;
   text-align: center;
   color: #999999;

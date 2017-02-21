@@ -28,7 +28,7 @@ analytics_id: "UA-85305402-2"
 markdown: kramdown
 
 kramdown:
-  parse_block_html: true
+  parse_block_html: false
 
 gems:
   - jekyll-paginate
