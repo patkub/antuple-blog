@@ -4,7 +4,6 @@ title: Projects
 permalink: /projects/
 ---
 
-
 <div class="card-container">
   {% for project in site.data.projects %}
     <div class="card">
@@ -31,4 +30,3 @@ permalink: /projects/
     </div>
   {% endfor %}
 </div>
-
