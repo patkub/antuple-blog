@@ -30,9 +30,12 @@
       path: https://github.com/patkub/skiing-database-intro
   
 - name: Sourcemod
-  description: Plugin scripts for Team Fortress 2, a Half-Life 2 engine game. Custom libraries provide a variety of game play modifications from invincibility to hats with particle effects.
+  description: Plugin scripts for Half-Life 2 engine games Team Fortress 2 and Counter-Strike Global Offensive. Custom plugins provide a variety of game play modifications such as invincibility, hats with particle effects, and weapon skins.
   image: assets/images/sourcemod.png
   links:
-    - name: GitHub
+    - name: GitHub TF2
       path: https://github.com/patkub/tf-sourcemod
+      
+    - name: GitHub CS:GO
+      path: https://github.com/patkub/cs-sourcemod
   
