@@ -6,17 +6,29 @@ permalink: /projects/
 
 
 <div class="card-container">
+  {% for project in site.data.projects %}
     <div class="card">
-      <div class="card__image">
-        <img noloading="" width="100%" height="100%" src="{{site.baseurl}}/assets/images/hex23ds.jpg" layout="responsive">
-      </div>
+      {% if project.image %}
+        <div class="card__background">
+            <div class="card__image">
+              <img noloading="" width="100%" height="100%" src="{{site.baseurl}}/{{project.image}}" layout="responsive">
+            </div>
+        </div>
+      {% endif %}
+      
       <div class="card__content">
-        <h4 class="card__title" style="margin-top: 0px;">Hex23DS</h4>
-        <p>Extract 3DS version from firmware file. Input hex value, or drag-drop firmware file.</p>
+        <h4 class="card__title" style="margin-top: 0px;">{{project.name}}</h4>
+        <p>{{project.description}}</p>
       </div>
       <div class="card__action">
-        <a href="http://antuple.net/files/Hex23DS.jar">Download JAR</a>
-        <a href="https://github.com/patkub/hex23ds">GitHub</a>
+        {% if project.github %}
+          <a href="{{project.github}}">Visit GitHub</a>
+        {% endif %}
+        {% if project.download %}
+          <a href="{{project.download}}">Download</a>
+        {% endif %}
       </div>
     </div>
+  {% endfor %}
 </div>
+

@@ -1,0 +1,17 @@
+- name: Hex23DS
+  description: Extract 3DS version from firmware file. Input hex value, or drag-drop firmware file.
+  image: assets/images/hex23ds.jpg
+  github: https://github.com/patkub/hex23ds
+  download: http://antuple.net/files/Hex23DS.jar
+
+- name: Mastermind
+  description: Graphical game of mastermind against the computer.
+  image: assets/images/mastermind.jpg
+  github: https://github.com/patkub/java-fundamentals
+
+- name: Sourcemod
+  description: Plugin scripts for Team Fortress 2, a Half-Life 2 engine game. Custom libraries provide a variety of game play modifications from invincibility to hats with particle effects.
+  image: assets/images/sourcemod.png
+  github: https://github.com/patkub/tf-sourcemod
+
+
