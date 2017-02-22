@@ -41,7 +41,6 @@
     font-size: 20px;
     font-weight: 300;
     line-height: 1.4;
-    margin-top: 0 !important;
     margin-bottom: 16px;
     color: #424242
 }
@@ -53,7 +52,7 @@
     text-align: left;
     -webkit-box-flex: 1;
     -ms-flex: 1 0 auto;
-    flex: 1 0 auto
+    flex: 1 0 auto;
 }
 
 .card p {
