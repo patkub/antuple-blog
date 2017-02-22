@@ -20,12 +20,9 @@ permalink: /projects/
         <p>{{project.description}}</p>
       </div>
       <div class="card__action">
-        {% if project.github %}
-          <a href="{{project.github}}">Visit GitHub</a>
-        {% endif %}
-        {% if project.download %}
-          <a href="{{project.download}}">Download</a>
-        {% endif %}
+        {% for link in project.links %}
+            <a href="{{link.path}}">{{link.name}}</a>
+        {% endfor %}
       </div>
     </div>
   {% endfor %}

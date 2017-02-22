@@ -1,26 +1,38 @@
 - name: Hex23DS
   description: Extract 3DS version from firmware file. Input hex value, or drag-drop firmware file.
   image: assets/images/hex23ds.jpg
-  github: https://github.com/patkub/hex23ds
-  download: http://antuple.net/files/Hex23DS.jar
+  links:
+    - name: GitHub
+      path: https://github.com/patkub/hex23ds
+      
+    - name: Download
+      path: http://antuple.net/files/Hex23DS.jar
 
 - name: Mastermind
   description: Graphical game of mastermind against the computer.
   image: assets/images/mastermind.jpg
-  github: https://github.com/patkub/java-fundamentals/tree/master/Mastermind
+  links:
+    - name: GitHub
+      path: https://github.com/patkub/java-fundamentals/tree/master/Mastermind
 
 - name: Count Down to Grad
   description: Count down timer to graduation with scrolling text.
   image: assets/images/count_down_to_grad.jpg
-  github: https://github.com/patkub/pltw-arduino/tree/master/CountDownToGrad
+  links:
+    - name: GitHub
+      path: https://github.com/patkub/pltw-arduino/tree/master/CountDownToGrad
 
 - name: Ski Database
   description: A database of ski resorts. All relations are in Boyce-Codd normal form and 3rd normal form.
   image: assets/images/skiing.png
-  github: https://github.com/patkub/skiing-database-intro
+  links:
+    - name: GitHub
+      path: https://github.com/patkub/skiing-database-intro
   
 - name: Sourcemod
   description: Plugin scripts for Team Fortress 2, a Half-Life 2 engine game. Custom libraries provide a variety of game play modifications from invincibility to hats with particle effects.
   image: assets/images/sourcemod.png
-  github: https://github.com/patkub/tf-sourcemod
+  links:
+    - name: GitHub
+      path: https://github.com/patkub/tf-sourcemod
   
