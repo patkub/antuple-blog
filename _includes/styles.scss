@@ -66,8 +66,8 @@ body {
   max-width: $page-max-width;
   margin: 16px auto 0 auto;
   @include box-sizing(border-box);
-  @include respond-to(800) {
-    padding: 0 $rs * 1;
+  @include respond-to(768) {
+    padding: 10 $rs * 1;
   }
 
   .page-links {
@@ -124,7 +124,7 @@ body {
   max-width: $page-max-width;
   margin: 25px auto 0 auto;
   @include box-sizing(border-box);
-  @include respond-to(800) {
+  @include respond-to(768) {
     padding: 0 $rs * 1;
   }
 
@@ -389,7 +389,7 @@ body {
       float: left;
       width: 47%;
       @include box-sizing(border-box);
-      @include respond-to(800) {
+      @include respond-to(768) {
         width: 100%;
         padding-bottom: $rs * 2;
       }
@@ -446,7 +446,7 @@ body {
       float: right;
       width: 47%;
       @include box-sizing(border-box);
-      @include respond-to(800) {
+      @include respond-to(768) {
         width: 100%;
       }
 
