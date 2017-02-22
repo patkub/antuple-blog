@@ -6,7 +6,8 @@
     -ms-flex-pack: justify;
     justify-content: space-between;
     -ms-flex-wrap: wrap;
-    flex-wrap: wrap
+    flex-wrap: wrap;
+    margin-top: 16px
 }
 
 .card {
@@ -40,7 +41,7 @@
     font-size: 20px;
     font-weight: 300;
     line-height: 1.4;
-    margin-top: 0;
+    margin-top: 0 !important;
     margin-bottom: 16px;
     color: #424242
 }
