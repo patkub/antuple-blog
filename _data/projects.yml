@@ -7,7 +7,7 @@
 - name: Mastermind
   description: Graphical game of mastermind against the computer.
   image: assets/images/mastermind.jpg
-  github: https://github.com/patkub/java-fundamentals
+  github: https://github.com/patkub/java-fundamentals/tree/master/Mastermind
 
 - name: Count Down to Grad
   description: Count down timer to graduation with scrolling text.

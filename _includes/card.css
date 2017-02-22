@@ -27,15 +27,8 @@
     -webkit-box-flex: 0;
     -ms-flex: 0 0 31%;
     flex: 0 0 31%;
-    -ms-flex: 0 0 calc(33% - 20px);
-    flex: 0 0 calc(33% - 20px)
-}
-
-@media only screen and (max-width: 1300px) {
-    .card {
-        -ms-flex-preferred-size: calc(50% - 20px);
-        flex-basis: calc(50% - 20px);
-    }
+    -ms-flex: 0 0 calc(50% - 20px);
+    flex: 0 0 calc(50% - 20px)
 }
 
 @media only screen and (max-width: 768px) {
@@ -93,15 +86,9 @@
 .card__image {
     position: relative;
     overflow: hidden;
+    height: 300px;
 }
 
 .card__image img {
     height: auto;
 }
-
-@media only screen and (min-width: 768px) {
-    .card__image {
-        height: 250px;
-    }
-}
-
