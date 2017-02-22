@@ -86,10 +86,15 @@
 .card__image {
     position: relative;
     overflow: hidden;
-    height: 250px;
 }
 
 .card__image img {
     height: auto;
+}
+
+@media only screen and (min-width: 768px) {
+    .card__image {
+        height: 250px;
+    }
 }
 
