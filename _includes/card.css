@@ -34,7 +34,9 @@
 @media only screen and (max-width: 768px) {
     .card {
         -ms-flex-preferred-size: 100%;
-        flex-basis: 100%
+        flex-basis: 100%;
+        margin-left: 0px;
+        margin-right: 0px;
     }
 }
 
