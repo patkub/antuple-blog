@@ -1,7 +1,7 @@
 .global-note {
     text-align: center;
     padding: 1em;
-    background-color: #E91E63;
+    background-color: #2196F3;
     color: #fff;
     font-style: italic;
     z-index: 1;
@@ -10,7 +10,7 @@
 
 .button {
     background: #fff;
-    color: #0379c4;
+    color: #000;
     display: inline-block;
     padding: 6px 12px;
     border-radius: 2px;
