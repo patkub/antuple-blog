@@ -16,7 +16,7 @@ permalink: /projects/
       {% endif %}
       
       <div class="card__content">
-        <h4 class="card__title" style="margin-top: 0px;">{{project.name}}</h4>
+        <h4 class="card__title">{{project.name}}</h4>
         <p>{{project.description}}</p>
       </div>
       <div class="card__action">
