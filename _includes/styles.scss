@@ -1,7 +1,7 @@
 @import 'bourbon/bourbon';
 @import 'syntax-highlighting';
 
-$grey-color:       #828282;
+$grey-color: #828282;
 
 .icon {
 
@@ -14,6 +14,16 @@ $grey-color:       #828282;
         path {
             fill: $grey-color;
         }
+    }
+}
+
+.icon--about > span > svg {
+    width: 32px;
+    height: 32px;
+    margin-right: 10px;
+    
+    path {
+        fill: #263238;
     }
 }
 
@@ -159,11 +169,11 @@ body {
       color: #666665;
     }
     .post-meta {
-      font-size: 14px;
-      color: #b3b3b1;
+      font-size: 20px;
+      color: #b2b9be;
       line-height: 30px;
       a {
-        color: #b3b3b1;
+        color: #b2b9be;
         text-decoration: none;
         &:hover {
           text-decoration: underline;

@@ -1,12 +1,16 @@
 - name: Resume
-  link: resume.pdf
+  icon: resume
+  link: /files/resume.pdf
   
 - name: LinkedIn
+  icon: linkedin
   link: https://www.linkedin.com/in/patkub/
   
 - name: GitHub
+  icon: github2
   link: https://github.com/patkub/
   
 - name: Bitbucket
+  icon: bitbucket
   link: https://bitbucket.org/patkub/
 
