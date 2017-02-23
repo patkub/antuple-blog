@@ -5,7 +5,7 @@ layout: default
 <main class="content" role="main">
 
     <header class="blog-header">
-        <h1 class="blog-title">{{ site.title }}</h1>
+        <h1 class="blog-title">{{ site.name }}</h1>
         <h2 class="blog-description">{{ site.description }}</h2>
     </header>
   
@@ -14,70 +14,45 @@ layout: default
             <a href="{{ link.link }}" class="button icon--about">{% include icon-{{ link.icon }}.html %} {{ link.name}}</a>
         {% endfor %}
     </div>
-  
-    <h2 class="post-title">Latest Project</h2>
+    
     <div class="card-container">
-        <div class="card">
-            {% if site.data.projects.first.image %}
-            <div class="card__background">
-                <div class="card__image">
-                    <amp-img noloading="" width="300px" height="300px" src="{{site.baseurl}}/{{site.data.projects.first.image}}" layout="responsive">
+        <div class="card-flex">
+            <h2 class="post-title">Latest Project</h2>
+            <div class="card">
+                
+                {% if site.data.projects.first.image %}
+                <div class="card__background">
+                    <div class="card__image">
+                        <amp-img noloading="" width="300px" height="300px" src="{{site.baseurl}}/{{site.data.projects.first.image}}" layout="responsive">
+                    </div>
+                </div>
+                {% endif %}
+
+                <div class="card__content">
+                    <h4 class="card__title">{{site.data.projects.first.name}}</h4>
+                    <p>{{site.data.projects.first.description}}</p>
+                </div>
+                <div class="card__action">
+                    {% for link in site.data.projects.first.links %}
+                    <a href="{{link.path}}">{{link.name}}</a>
+                    {% endfor %}
                 </div>
             </div>
-            {% endif %}
-
-            <div class="card__content">
-                <h4 class="card__title">{{site.data.projects.first.name}}</h4>
-                <p>{{site.data.projects.first.description}}</p>
-            </div>
-            <div class="card__action">
-                {% for link in site.data.projects.first.links %}
-                <a href="{{link.path}}">{{link.name}}</a>
-                {% endfor %}
-            </div>
         </div>
-        <div>
-            <a href="{{site.baseurl}}/projects">
-                <span class="right-arrow" id="projects-arrow"></span>
-            </a>
-        </div>
-    </div>
-  
-    <div class="cf frame">
-        {% for post in paginator.posts %}
-        <article class="post" itemscope itemtype="http://schema.org/BlogPosting" role="article">
-            <div class="article-item">
-                <header class="post-header">
-                    <h2 class="post-title" itemprop="name"><a href="{{ site.baseurl }}{{ post.url }}" itemprop="url">{{ post.title }}</a></h2>
-                </header>
-                <div class="post-meta">
-                    <time datetime="{{ post.date | date_to_long_string }}">{{ post.date | date_to_long_string }}</time>
+        <div class="card-flex">
+            <h2 class="post-title">Latest Posts</h2>
+            <div class="blog">
+                <div class="blog__tabs">
+                    {% for post in site.posts limit:3 %}
+                    <a class="blog__tab" href="{{ site.baseurl }}{{ post.url }}" itemprop="url">
+                        <h3 class="blog__title">{{ post.title }}</h3>
+                        <div class="blog__subtitle">{{ post.date | date_to_long_string }}</div>
+                    </a>
+                    {% endfor %}
                 </div>
-                <section class="post-excerpt" itemprop="description">
-                    <p>{{ post.excerpt | strip_html | truncatewords: 50 }}</p>
-                </section>
             </div>
-        </article>
-        {% endfor %}
+        </div>
     </div>
-
-    <nav class="pagination" role="navigation">
-        {% if paginator.next_page %}
-        <a class="newer-posts" href="{{ site.baseurl }}/page{{paginator.next_page}}">&larr; Older posts</a>
-        {% else %}
-        <a class="newer-posts disabled">&larr; Older posts</a>
-        {% endif %}
-        <span class="page-number">Page {{ paginator.page }} of {{ paginator.total_pages }}</span>
-        {% if paginator.previous_page %}
-            {% if paginator.page == 2 %}
-            <a class="older-posts" href="{{ site.baseurl }}/">Newer posts &rarr;</a>
-            {% else %}
-            <a class="older-posts" href="{{ site.baseurl }}/page{{paginator.previous_page}}">Newer posts &rarr;</a>
-            {% endif %}
-        {% else %}
-        <a class="older-posts disabled">Newer posts &rarr;</a>
-        {% endif %}
-    </nav>
 
 </main>
 
