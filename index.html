@@ -9,9 +9,9 @@ layout: default
         <h2 class="blog-description">{{ site.description }}</h2>
     </header>
   
-    <div class="global-note">
+    <div class="section-columns">
         {% for link in site.data.about %}
-            <a href="{{ link.link }}" class="button icon--about">{% include icon-{{ link.icon }}.html %} {{ link.name}}</a>
+            <a href="{{ link.link }}" class="button blue-button icon--about">{% include icon-{{ link.icon }}.html %} {{ link.name}}</a>
         {% endfor %}
     </div>
     

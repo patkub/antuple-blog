@@ -1,14 +1,68 @@
 .global-note {
     text-align: center;
     padding: 1em;
-    background-color: #2196F3;
     color: #fff;
     font-style: italic;
     z-index: 1;
     position: relative;
+    
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: flex-start;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
 }
 
-.button {
+.section-columns {
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -ms-flex-direction: row;
+    -webkit-flex-direction: row;
+    flex-direction: row;
+}
+
+@media (max-width: 900px) {
+    .section-columns {
+        -ms-flex-direction: column;
+        -webkit-flex-direction: column;
+        flex-direction: column;
+    }
+    .blue-button {
+        margin-bottom: 5px;
+    }
+}
+
+.blue-button {
+    color: #fff;
+    background: #1e88e5;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: 13px;
+    padding: 3px 20px;
+    margin-right: 10px;
+    border-radius: 2px;
+    text-align: center;
+    display: inline-block;
+}
+
+.button-flex {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 calc(100%);
+    flex: 0 0 calc(100%)
+}
+
+/*.button {
     background: #fff;
     color: #000;
     display: inline-block;
@@ -17,4 +71,4 @@
     font-style: normal;
     margin: 3px;
     text-decoration: none;
-}
+}*/
