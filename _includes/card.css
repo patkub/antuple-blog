@@ -48,11 +48,7 @@
     }
 }
 
-@media only screen and (min-width: 768px) {
-    .global-note {
-        display: none;
-    }
-    
+@media only screen and (min-width: 768px) {    
     .card__image {
         height: 300px;
     }
