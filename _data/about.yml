@@ -1,0 +1,12 @@
+- name: Resume
+  link: resume.pdf
+  
+- name: LinkedIn
+  link: https://www.linkedin.com/in/patkub/
+  
+- name: GitHub
+  link: https://github.com/patkub/
+  
+- name: Bitbucket
+  link: https://bitbucket.org/patkub/
+

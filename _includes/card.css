@@ -38,6 +38,16 @@
         margin-left: 0px;
         margin-right: 0px;
     }
+    
+    #projects-arrow{
+        display: none;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    .global-note {
+        display: none;
+    }
 }
 
 .card__title {
